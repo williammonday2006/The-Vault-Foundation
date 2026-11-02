@@ -1,0 +1,3 @@
+# Phase 1
+
+In this phase, I created the basic vault system using a function called accessVault(). The function checks whether the provided key matches "SECRET_123" and returns either "Access Granted" or "Access Denied". I also enabled strict mode using "use strict";. Strict mode acts as a safety net because it helps catch common coding mistakes, such as accidentally creating undeclared variables. This makes the code safer and easier to debug.
