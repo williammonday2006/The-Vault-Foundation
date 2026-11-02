@@ -13,3 +13,7 @@ In this phase, I created the attemptEntry() function using a try, catch, and fin
 # Phase 4
 
 In this phase, I created automated test functions to verify that the vault behaves correctly. I tested a correct password, an undefined key, a NaN key, and an incorrect password. Each test reports whether it passed or failed. Automated testing is more reliable than manual testing because it checks the same conditions consistently and reduces the chance of human error. I also learned that when an error is thrown, normal execution stops and moves to the nearest matching catch block. Once the error is handled, the program can continue running.
+
+# Phase 5
+
+In this phase, I tested my vault using several different inputs, including empty strings, numbers, null, objects, arrays, and NaN. All of the incorrect inputs were handled without crashing the program. I confirmed that missing or corrupted keys produce an InvalidKeyError and other incorrect keys produce a VaultLockedError. I also verified that the finally block always runs after an access attempt. This assignment helped me understand how custom errors, exception handling, and automated testing work together to make a program more reliable.

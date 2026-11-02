@@ -66,11 +66,20 @@ function testVaultLocked() {
 
 function runTests() {
     console.log("Starting Vault Tests...");
-
     console.log("Correct key:", testAccessGranted() ? "PASSED" : "FAILED");
     console.log("Undefined key:", testInvalidKey(undefined) ? "PASSED" : "FAILED");
     console.log("NaN key:", testInvalidKey(NaN) ? "PASSED" : "FAILED");
     console.log("Wrong key:", testVaultLocked() ? "PASSED" : "FAILED");
 }
 
+console.log("--- Automated Tests ---");
 runTests();
+
+console.log("\n--- Manual Tests ---");
+attemptEntry("SECRET_123");
+attemptEntry("");
+attemptEntry(12345);
+attemptEntry(null);
+attemptEntry({});
+attemptEntry([]);
+attemptEntry(NaN);
