@@ -9,3 +9,7 @@ In this phase, I created two custom error classes called InvalidKeyError and Vau
 # Phase 3
 
 In this phase, I created the attemptEntry() function using a try, catch, and finally block. The try block attempts to access the vault, while the catch block checks which custom error occurred using instanceof. It displays a different message depending on whether the key was missing or incorrect. The finally block always displays "Vault attempt completed." regardless of the result. Unlike catch, which only runs when an error occurs, finally runs whether the code succeeds or fails. A real-world example would be closing a file after attempting to read it, ensuring that system resources are properly released even if an error occurs.
+
+# Phase 4
+
+In this phase, I created automated test functions to verify that the vault behaves correctly. I tested a correct password, an undefined key, a NaN key, and an incorrect password. Each test reports whether it passed or failed. Automated testing is more reliable than manual testing because it checks the same conditions consistently and reduces the chance of human error. I also learned that when an error is thrown, normal execution stops and moves to the nearest matching catch block. Once the error is handled, the program can continue running.
